@@ -49,6 +49,7 @@ const seventhCircleCloseAnimation = new TweenLite.to(triangle, CIRCLES_ANIMATION
 
 const firstCirclesTimeline = new TimelineLite()
   firstCirclesTimeline
+    .add(() => {isGoingBackwards = false})
     .add([
       firstCircle,
       secondCircle,
@@ -58,9 +59,7 @@ const firstCirclesTimeline = new TimelineLite()
       sixthCircle,
       seventhCircle
     ])
-    .add(() => {
-      isGoingBackwards = true
-    })
+    .add(() => {isGoingBackwards = true})
     .add([
       firstCircleCloseAnimation,
       secondCircleCloseAnimation,
@@ -104,3 +103,7 @@ const animateCircle = (color, circleIndex, currentCircleAngle) => {
 const getRadianDegree = (degree) => {
   return degree * Math.PI / 180
 }
+
+document.addEventListener('click', () => {
+  firstCirclesTimeline.restart()
+})
