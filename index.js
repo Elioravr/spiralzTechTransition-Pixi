@@ -48,12 +48,12 @@ const fifthFullCircleAnimation = new TweenLite.to(fullCircles, CIRCLES_ANIMATION
 const sixthFullCircleAnimation = new TweenLite.to(fullCircles, CIRCLES_ANIMATION_DURATION, {'6-angle': 360, delay: 5 * CIRCLES_ANIMATION_DURATION / 7})
 const seventhFullCircleAnimation = new TweenLite.to(fullCircles, CIRCLES_ANIMATION_DURATION, {'7-angle': 360, delay: 6 * CIRCLES_ANIMATION_DURATION / 7})
 
-const firstEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'1-angle': 360, delay: CIRCLES_ANIMATION_DURATION / 6})
-const secondEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'2-angle': 360, delay: 2 * CIRCLES_ANIMATION_DURATION / 6})
-const thirdEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'3-angle': 360, delay: 3 * CIRCLES_ANIMATION_DURATION / 6})
-const forthEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'4-angle': 360, delay: 4 * CIRCLES_ANIMATION_DURATION / 6})
-const fifthEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'5-angle': 360, delay: 5 * CIRCLES_ANIMATION_DURATION / 6})
-const sixthEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'6-angle': 360, delay: 6 * CIRCLES_ANIMATION_DURATION / 6})
+const firstEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'1-angle': 360})
+const secondEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'2-angle': 360, delay: CIRCLES_ANIMATION_DURATION / 6})
+const thirdEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'3-angle': 360, delay: 2 * CIRCLES_ANIMATION_DURATION / 6})
+const forthEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'4-angle': 360, delay: 3 * CIRCLES_ANIMATION_DURATION / 6})
+const fifthEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'5-angle': 360, delay: 4 * CIRCLES_ANIMATION_DURATION / 6})
+const sixthEmptyCircleAnimation = new TweenLite.to(emptyCircles, EMPTY_CIRCLES_ANIMATION_DURATION, {'6-angle': 360, delay: 5 * CIRCLES_ANIMATION_DURATION / 6})
 
 const firstCircleCloseAnimation = new TweenLite.to(fullCircles, CIRCLES_ANIMATION_DURATION, {'7-angle': 0})
 const secondCircleCloseAnimation = new TweenLite.to(fullCircles, CIRCLES_ANIMATION_DURATION, {'6-angle': 0, delay: CIRCLES_ANIMATION_DURATION / 7})
